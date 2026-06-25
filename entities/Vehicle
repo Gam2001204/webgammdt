@@ -1,0 +1,19 @@
+{
+  "name": "Vehicle",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "number"
+    },
+    "categoria": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nombre",
+    "precio"
+  ]
+}

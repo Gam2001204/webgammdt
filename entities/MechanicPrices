@@ -1,0 +1,63 @@
+{
+  "name": "MechanicPrices",
+  "type": "object",
+  "properties": {
+    "completo": {
+      "type": "number",
+      "default": 5550
+    },
+    "reparacion": {
+      "type": "number",
+      "default": 150
+    },
+    "gruaA": {
+      "type": "number",
+      "default": 25
+    },
+    "gruaB": {
+      "type": "number",
+      "default": 35
+    },
+    "gruaC": {
+      "type": "number",
+      "default": 45
+    },
+    "pinturaUnidad": {
+      "type": "number",
+      "default": 100
+    },
+    "piezasUnidad": {
+      "type": "number",
+      "default": 100
+    },
+    "motor": {
+      "type": "number",
+      "default": 1480
+    },
+    "frenos": {
+      "type": "number",
+      "default": 925
+    },
+    "suspension": {
+      "type": "number",
+      "default": 925
+    },
+    "transmision": {
+      "type": "number",
+      "default": 925
+    },
+    "turbo": {
+      "type": "number",
+      "default": 1925
+    },
+    "blindaje": {
+      "type": "number",
+      "default": 314.5
+    },
+    "precioBaseAsbo": {
+      "type": "number",
+      "default": 18500
+    }
+  },
+  "required": []
+}

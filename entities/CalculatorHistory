@@ -1,0 +1,64 @@
+{
+  "name": "CalculatorHistory",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "userNombreIC": {
+      "type": "string"
+    },
+    "businessId": {
+      "type": "string"
+    },
+    "businessNombre": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "Badulaque",
+        "Local de Ocio",
+        "Mec\u00e1nico",
+        "Personalizada"
+      ]
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "precio": {
+            "type": "number"
+          },
+          "cantidad": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "total": {
+      "type": "number"
+    },
+    "vehiculo": {
+      "type": "string"
+    },
+    "vehiculoPrecio": {
+      "type": "number"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "userId",
+    "businessId",
+    "tipo",
+    "total",
+    "fecha"
+  ]
+}

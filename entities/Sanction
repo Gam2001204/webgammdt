@@ -1,0 +1,63 @@
+{
+  "name": "Sanction",
+  "type": "object",
+  "properties": {
+    "staffNombre": {
+      "type": "string"
+    },
+    "staffId": {
+      "type": "string"
+    },
+    "businessId": {
+      "type": "string"
+    },
+    "businessNombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "Aviso",
+        "Sanci\u00f3n"
+      ]
+    },
+    "detalleSancion": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "pendiente",
+        "aceptada",
+        "apelada",
+        "apelacion_aprobada",
+        "apelacion_denegada"
+      ],
+      "default": "pendiente"
+    },
+    "motivoApelacion": {
+      "type": "string"
+    },
+    "respuestaApelacion": {
+      "type": "string"
+    },
+    "fechaCreacion": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fechaLimiteApelacion": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "staffNombre",
+    "businessId",
+    "descripcion",
+    "tipo",
+    "fechaCreacion"
+  ]
+}

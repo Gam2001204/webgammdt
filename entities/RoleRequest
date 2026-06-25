@@ -1,0 +1,52 @@
+{
+  "name": "RoleRequest",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "userNombreIC": {
+      "type": "string"
+    },
+    "nombreDiscord": {
+      "type": "string"
+    },
+    "businessId": {
+      "type": "string"
+    },
+    "businessNombre": {
+      "type": "string"
+    },
+    "rolesSeleccionados": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "pendiente",
+        "aceptada",
+        "denegada"
+      ],
+      "default": "pendiente"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "motivoDenegacion": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "userId",
+    "businessId",
+    "rolesSeleccionados",
+    "fecha"
+  ]
+}

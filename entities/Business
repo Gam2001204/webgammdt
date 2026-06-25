@@ -1,0 +1,52 @@
+{
+  "name": "Business",
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string",
+      "enum": [
+        "Badulaque",
+        "Local de Ocio",
+        "Mec\u00e1nico"
+      ]
+    },
+    "colorHEX": {
+      "type": "string"
+    },
+    "calculadoraTipos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "itemsPersonalizados": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "precio": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "activo": {
+      "type": "boolean",
+      "default": true
+    },
+    "descripcion": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nombre",
+    "categoria",
+    "colorHEX"
+  ]
+}

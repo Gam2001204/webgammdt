@@ -1,0 +1,51 @@
+{
+  "name": "SocietyReport",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "businessId": {
+      "type": "string"
+    },
+    "businessNombre": {
+      "type": "string"
+    },
+    "jefeIC": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dineroSemanaAnterior": {
+      "type": "number"
+    },
+    "dineroEstaSemana": {
+      "type": "number"
+    },
+    "fotoCaja": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "pendiente",
+        "aprobado",
+        "rechazado"
+      ],
+      "default": "pendiente"
+    },
+    "comentarioAdmin": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "userId",
+    "businessId",
+    "jefeIC",
+    "fecha",
+    "dineroSemanaAnterior",
+    "dineroEstaSemana"
+  ]
+}

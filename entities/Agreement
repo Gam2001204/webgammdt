@@ -1,0 +1,67 @@
+{
+  "name": "Agreement",
+  "type": "object",
+  "properties": {
+    "businessSolicitanteId": {
+      "type": "string"
+    },
+    "businessSolicitanteNombre": {
+      "type": "string"
+    },
+    "jefeSolicitanteIC": {
+      "type": "string"
+    },
+    "jefeSolicitanteDiscord": {
+      "type": "string"
+    },
+    "businessDestinoId": {
+      "type": "string"
+    },
+    "businessDestinoNombre": {
+      "type": "string"
+    },
+    "jefeDestinoNombre": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date"
+    },
+    "aportaSolicitante": {
+      "type": "string"
+    },
+    "aportaDestino": {
+      "type": "string"
+    },
+    "firmaSolicitante": {
+      "type": "boolean",
+      "default": false
+    },
+    "firmaDestino": {
+      "type": "boolean",
+      "default": false
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "pendiente",
+        "aceptado",
+        "rechazado",
+        "devuelto"
+      ],
+      "default": "pendiente"
+    },
+    "motivoRechazo": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "businessSolicitanteId",
+    "businessDestinoId",
+    "jefeSolicitanteIC",
+    "fecha"
+  ]
+}

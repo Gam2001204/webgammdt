@@ -1,0 +1,41 @@
+{
+  "name": "ServiceShift",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "userNombreIC": {
+      "type": "string"
+    },
+    "userNombreDiscord": {
+      "type": "string"
+    },
+    "businessId": {
+      "type": "string"
+    },
+    "businessNombre": {
+      "type": "string"
+    },
+    "entrada": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "salida": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "activo": {
+      "type": "boolean",
+      "default": true
+    },
+    "semana": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "userId",
+    "businessId",
+    "entrada"
+  ]
+}

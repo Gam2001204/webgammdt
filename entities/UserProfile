@@ -1,0 +1,46 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "nombreIC": {
+      "type": "string"
+    },
+    "nombreDiscord": {
+      "type": "string"
+    },
+    "discordId": {
+      "type": "string"
+    },
+    "discordVinculado": {
+      "type": "boolean",
+      "default": false
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "esAdmin": {
+      "type": "boolean",
+      "default": false
+    },
+    "primerLogin": {
+      "type": "boolean",
+      "default": true
+    },
+    "onboardingCompletado": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "userId"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Announcement",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "string"
+    },
+    "userNombreIC": {
+      "type": "string"
+    },
+    "businessId": {
+      "type": "string"
+    },
+    "businessNombre": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "contenido": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "editorial",
+        "anuncio"
+      ],
+      "default": "anuncio"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "userId",
+    "contenido",
+    "fecha"
+  ]
+}
